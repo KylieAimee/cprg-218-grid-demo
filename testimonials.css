@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+main section{
+    background-color: #9ee6d5;
+    border: 3px solid #052425;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+main section h2{
+    margin: 0;
+}
+
+main section.grid-col-span-2{
+    background-color: #e36eee;
+    color: white;
+    grid-column: span 2;
+}
+
+main section.grid-row-span-2{
+    background-color: antiquewhite;
+    grid-row: span 2;
+}
